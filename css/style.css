@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: Times, "Times New Roman", Georgia, serif;
+}
+
+/* Navbar */
+
+#menu li > a {
+    font-size: 20px;
+    font-weight: bold;
+    color: darkblue;
+}
+
+#menu form > button{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* texto e imagen 1 */ 
+
+.primerLinea {
+    background-color: rgb(155, 216, 226);
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    width: 100%;
+    margin: 2rem auto 0 auto;
+}
+
+.primerLinea img {
+    width: 50%;
+    height: 400px;
+}
+
+.primerLinea h1 {
+    margin: 0;
+    color: rgba(234, 255, 47, 0.468);
+}
+
+.primerLinea p {
+    margin-right: 15px;
+    color: white;
+}
+/* texto e imagen 2 */
+
+.segundaLinea {
+    background-color: rgb(155, 216, 226);
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    width: 100%;
+    margin: 2rem auto 0 auto;
+}
+
+.segundaLinea img {
+    width: 50%;
+    height: auto;
+}
+
+.segundaLinea h1 {
+    margin: 0 0 0 15px;
+    color: rgba(234, 255, 47, 0.468);
+}
+
+.segundaLinea p {
+    margin-left: 15px;
+    color: white;
+}
+
+/* Carrusel */
+.carousel-inner {
+    max-height: 500px;
+}
+
+/* Sobre Nosotros */
+
+.nuestra_info {
+    background-color: beige;
+    border-color: yellow;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+
+
+.nuestra_info img{
+    width: 45vw;
+    height: auto;
+}
+
+
+/* Footer */
+
+footer {
+    background-color:rgb(64, 133, 218);
+    min-height: 80px;
+}
+
+footer p{
+    color: black;
+    text-align: center;
+}
+
+
+#iconosRedes {
+    font-size: 35px;
+    color: yellow;
+}
+
+#iconosOpinion {
+    font-size: 35px;
+    padding: 15px 10px 20px 10px;
+    color: green;
+}
+
+
+
+
+
+
+@media (max-width: 768px){
+
+
+    .primerLinea {
+        background-color: rgb(155, 216, 226);
+        display: flex;
+        justify-content: space-between;
+        padding: 40px;
+        width: 100%;
+        margin: 2rem auto 0 auto;
+        flex-direction: column;
+    }
+
+    .primerLinea img {
+        width: 80%;
+        height: 400px;
+    }
+    
+
+    .segundaLinea {
+        background-color: rgb(155, 216, 226);
+        display: flex;
+        justify-content: space-between;
+        padding: 40px;
+        width: 100%;
+        margin: 2rem auto 0 auto;
+        flex-direction: column;
+    }
+
+    .segundaLinea img {
+        width: 80%;
+        height: auto;
+    }
+    
+}
