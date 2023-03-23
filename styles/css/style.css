@@ -93,14 +93,14 @@ footer p {
   margin: 2rem 20px 2rem 20px;
 }
 .hombres_container .item {
-  background-color: #d9e9ad;
+  background-color: #7fff8f;
   padding: 20px;
   text-align: center;
 }
 .hombres_container .item h2 {
   display: inline-block;
   text-align: center;
-  color: #e26a1a;
+  color: #ac7716;
 }
 .hombres_container .item p {
   text-align: center;
@@ -119,23 +119,26 @@ img {
     grid-template-rows: auto;
   }
 }
-.hombres_container {
+.mujeres_container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 10px;
   margin: 2rem 20px 2rem 20px;
 }
-.hombres_container .item {
-  background-color: #d9e9ad;
+.mujeres_container .m_item {
+  background-color: #7fff8f;
   padding: 20px;
   text-align: center;
 }
-
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.mujeres_container .m_item h2 {
+  display: inline-block;
+  text-align: center;
+  color: #ac7716;
+}
+.mujeres_container .m_item p {
+  text-align: center;
+  color: white;
 }
 
 @media only screen and (max-width: 768px) {
