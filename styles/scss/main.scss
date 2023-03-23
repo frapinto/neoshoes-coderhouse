@@ -1,0 +1,115 @@
+@import "./base/_reset";
+@import "./layout/_navbar";
+@import "./layout/_header";
+@import "./layout/_footer";
+@import "./components/_carrousel";
+@import "./pages/_sobre_nosotros.scss";
+@import "./pages/_hombres.scss";
+@import "./pages/_mujeres.scss";
+
+
+body{
+    font-family: Times, "Times New Roman", Georgia, serif;
+}
+
+
+/* texto e imagen 1 */ 
+
+@mixin rectangulo($fondo,$ancho:80vw){
+    background-color: $fondo;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    width: $ancho;
+    margin: 2rem auto 1rem auto;
+}
+
+.primerLinea {
+    @include rectangulo(#3535ff,80vw);
+    overflow: hidden;
+    img {
+        width: 70%;
+        max-height: 50vh;
+
+    }
+    h1 {
+        text-align:center;
+        color: #d9e21a;
+    }
+    p {
+        text-align: center;
+        color: white;
+    }
+}
+
+/* texto e imagen 2 */
+
+.segundaLinea {
+    @include rectangulo(#3535ff,80vw);
+    img {
+        width: 70%;
+        max-height: 60vh;
+    }
+    h1 {
+        text-align:center;
+        color: #d9e21a  ;
+    }
+    p {
+        color: white;
+    }
+}
+
+
+.nuestra_info {
+    background-color: beige;
+    border-color: yellow;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    img{
+        width: 45vw;
+        height: auto;
+    }
+}
+
+
+
+
+@media (max-width: 768px){
+
+
+    @mixin rectangulo($fondo,$ancho){
+        background-color: $fondo;
+        display: flex;
+        justify-content: space-between;
+        padding: 40px;
+        width: $ancho;
+        margin: 2rem auto 1rem auto;
+        flex-direction: column;
+    }
+
+
+    .primerLinea {
+        @include rectangulo(#3535ff,100vw);
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            height: auto;
+        }
+    }
+
+    .segundaLinea {
+        @include rectangulo(#3535ff,100vw);
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            height: auto;
+        }
+    }
+    
+}

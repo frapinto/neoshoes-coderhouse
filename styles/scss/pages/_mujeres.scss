@@ -1,0 +1,25 @@
+.hombres_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+     gap: 10px;
+     margin: 2rem 20px 2rem 20px;
+    .item {
+      background-color: #d9e9ad;
+      padding: 20px;
+      text-align: center;
+    }
+  }
+  
+  img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .hombres_container {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
+  }
