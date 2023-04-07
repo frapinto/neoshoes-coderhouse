@@ -74,10 +74,10 @@ body {
     background-color: beige;
     border-color: yellow;
     display: flex;
+    flex-direction: row !important;
     justify-content: space-between;
     width: 100%;
     height: auto;
-
     img {
         width: 45vw;
         height: auto;
@@ -125,12 +125,11 @@ body {
         }
     }
 
-}
+    .nuestra_info {
 
-.nuestra_info {
-
-    img {
-        width: 75%;
-        height: auto;
+        img {
+            width: 100%;
+            height: auto;
+        }
     }
 }

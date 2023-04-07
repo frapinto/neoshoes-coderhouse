@@ -272,6 +272,7 @@ body {
   background-color: beige;
   border-color: yellow;
   display: flex;
+  flex-direction: row !important;
   justify-content: space-between;
   width: 100%;
   height: auto;
@@ -314,10 +315,10 @@ body {
     width: 80%;
     height: auto;
   }
-}
-.nuestra_info img {
-  width: 75%;
-  height: auto;
+  .nuestra_info img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
