@@ -1,48 +1,54 @@
 /* Sobre Nosotros */
 
 
-.nosotrosFlex{
+.nosotrosFlex {
     display: flex;
     flex-direction: row;
     grid-template-columns: 40% auto;
     justify-content: space-between;
     width: 80vw;
     margin: 2rem auto 0 auto;
-    #nosotros{
+
+    #nosotros {
         align-items: flex-start;
     }
-    .nosotrosUbicacion{
+
+    .nosotrosUbicacion {
         display: block;
         width: 70%;
         height: 400px;
         margin: 0 auto;
         align-items: flex-end;
     }
+
     #iconosOpinion {
         font-size: 35px;
         padding: 15px 10px 20px 10px;
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
 
-    .nosotrosFlex{
+    .nosotrosFlex {
         display: flex;
         flex-direction: column;
-        grid-template-rows:40% auto ;
+        grid-template-rows: 40% auto;
         justify-content: space-between;
         width: 80vw;
         margin: 2rem auto 0 auto;
-        #nosotros{
+
+        #nosotros {
             align-items: flex-start;
         }
-        .nosotrosUbicacion{
+
+        .nosotrosUbicacion {
             display: block;
-            width: 120vw;
-            height: 500px;
+            width: 70%;
+            height: 400px;
             margin: 0 auto;
             align-items: flex-end;
         }
+
         #iconosOpinion {
             font-size: 35px;
             padding: 15px 10px 20px 10px;

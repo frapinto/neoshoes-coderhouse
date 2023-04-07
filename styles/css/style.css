@@ -5,30 +5,95 @@
 }
 
 /* Navbar */
-#menu li > a {
-  font-size: 20px;
-  font-weight: bold;
-  color: darkblue;
+#menu {
+  background-color: #5050c0 !important;
 }
-#menu li > a form > button {
-  font-size: 20px;
-  font-weight: bold;
+#menu ul li {
+  display: inline-block;
+  list-style: none;
+}
+#menu ul li a {
+  color: #9dd3de;
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 0px 32px;
+}
+#menu ul li a:hover {
+  color: #eadc3e;
+  padding-left: 10px;
+}
+#menu ul li p {
+  float: left;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
-/* Footer */
-footer {
-  background-color: rgb(64, 133, 218);
-  min-height: 80px;
-  max-width: 100vw;
+.footer {
+  background-color: #5050c0;
+  padding: 60px 0;
+  overflow-x: hidden;
 }
-footer p {
-  color: black;
-  text-align: center;
+.footer .container__footer {
+  max-width: 1170px;
+  margin: auto;
+  overflow-x: hidden;
 }
-
-#iconosRedes {
-  font-size: 35px;
-  color: yellow;
+.footer .container__footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+}
+.footer .container__footer .row .footer-col {
+  width: 25%;
+  padding: 0 15px;
+  overflow-x: hidden;
+}
+.footer .container__footer .row .footer-col h4 {
+  font-size: 18px;
+  color: antiquewhite;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 500;
+  position: relative;
+}
+.footer .container__footer .row .footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #d4d452;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer .container__footer .row .footer-col ul {
+  list-style: none;
+}
+.footer .container__footer .row .footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer .container__footer .row .footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+}
+.footer .container__footer .row .footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 10px;
+}
+.footer .container__footer .row .footer-col ul li p {
+  padding-right: 15px;
+}
+.footer .container__footer .row .footer-col #iconosRedes {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  margin: 0 10px 10px 0;
 }
 
 /* Carrusel */
@@ -76,8 +141,8 @@ footer p {
   }
   .nosotrosFlex .nosotrosUbicacion {
     display: block;
-    width: 120vw;
-    height: 500px;
+    width: 70%;
+    height: 400px;
     margin: 0 auto;
     align-items: flex-end;
   }
@@ -95,14 +160,14 @@ footer p {
   overflow-x: hidden;
 }
 .hombres_container .item {
-  background-color: #7fff8f;
+  background-color: #3535ff;
   padding: 20px;
   text-align: center;
 }
 .hombres_container .item h2 {
   display: inline-block;
   text-align: center;
-  color: #ac7716;
+  color: #d9e21a;
 }
 .hombres_container .item p {
   text-align: center;
@@ -113,12 +178,16 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }
 
 @media only screen and (max-width: 768px) {
   .hombres_container {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+  }
+  .hombres_container .item {
+    width: 100%;
   }
 }
 .mujeres_container {
@@ -129,14 +198,14 @@ img {
   margin: 2rem 20px 2rem 20px;
 }
 .mujeres_container .m_item {
-  background-color: #87d0e3;
+  background-color: #3535ff;
   padding: 20px;
   text-align: center;
 }
 .mujeres_container .m_item h2 {
   display: inline-block;
   text-align: center;
-  color: #5f3f05;
+  color: #d9e21a;
 }
 .mujeres_container .m_item p {
   text-align: center;
@@ -151,6 +220,8 @@ img {
 }
 body {
   font-family: Times, "Times New Roman", Georgia, serif;
+  overflow-x: hidden;
+  background-color: #e7eabf;
 }
 
 /* texto e imagen 1 */
@@ -189,7 +260,7 @@ body {
   width: 70%;
   max-height: 60vh;
 }
-.segundaLinea h1 {
+.segundaLinea h2 {
   text-align: center;
   color: #d9e21a;
 }
@@ -224,7 +295,7 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 95%;
     height: auto;
   }
   .segundaLinea {
@@ -243,6 +314,10 @@ body {
     width: 80%;
     height: auto;
   }
+}
+.nuestra_info img {
+  width: 75%;
+  height: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -7,15 +7,20 @@
 @import "./pages/_hombres.scss";
 @import "./pages/_mujeres.scss";
 
+$background_color: #e7eabf;
 
-body{
+body {
     font-family: Times, "Times New Roman", Georgia, serif;
+    overflow-x: hidden;
+    background-color: $background_color;
 }
 
 
-/* texto e imagen 1 */ 
 
-@mixin rectangulo($fondo,$ancho:80vw){
+
+/* texto e imagen 1 */
+
+@mixin rectangulo($fondo, $ancho: 80vw) {
     background-color: $fondo;
     display: flex;
     justify-content: space-between;
@@ -25,17 +30,19 @@ body{
 }
 
 .primerLinea {
-    @include rectangulo(#3535ff,80vw);
+    @include rectangulo(#3535ff, 80vw);
     overflow: hidden;
+
     img {
         width: 70%;
         max-height: 50vh;
-
     }
+
     h1 {
-        text-align:center;
+        text-align: center;
         color: #d9e21a;
     }
+
     p {
         text-align: center;
         color: white;
@@ -45,15 +52,18 @@ body{
 /* texto e imagen 2 */
 
 .segundaLinea {
-    @include rectangulo(#3535ff,80vw);
+    @include rectangulo(#3535ff, 80vw);
+
     img {
         width: 70%;
         max-height: 60vh;
     }
-    h1 {
-        text-align:center;
-        color: #d9e21a  ;
+
+    h2 {
+        text-align: center;
+        color: #d9e21a;
     }
+
     p {
         color: white;
     }
@@ -67,7 +77,8 @@ body{
     justify-content: space-between;
     width: 100%;
     height: auto;
-    img{
+
+    img {
         width: 45vw;
         height: auto;
     }
@@ -76,10 +87,10 @@ body{
 
 
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
 
 
-    @mixin rectangulo($fondo,$ancho){
+    @mixin rectangulo($fondo, $ancho) {
         background-color: $fondo;
         display: flex;
         justify-content: space-between;
@@ -91,7 +102,20 @@ body{
 
 
     .primerLinea {
-        @include rectangulo(#3535ff,100vw);
+        @include rectangulo(#3535ff, 100vw);
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 95%;
+            height: auto;
+        }
+    }
+
+    .segundaLinea {
+        @include rectangulo(#3535ff, 100vw);
+
         img {
             display: block;
             margin-left: auto;
@@ -101,15 +125,12 @@ body{
         }
     }
 
-    .segundaLinea {
-        @include rectangulo(#3535ff,100vw);
-        img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 80%;
-            height: auto;
-        }
+}
+
+.nuestra_info {
+
+    img {
+        width: 75%;
+        height: auto;
     }
-    
 }

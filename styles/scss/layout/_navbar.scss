@@ -1,12 +1,31 @@
 /* Navbar */
 
-#menu li > a {
-    font-size: 20px;
-    font-weight: bold;
-    color: darkblue;
-    form > button{
-        font-size: 20px;
-        font-weight: bold;
+#menu {
+    background-color: #5050c0 !important;
+
+    ul {
+        li {
+            display: inline-block;
+            list-style: none;
+
+            a {
+                color: #9dd3de;
+                text-decoration: none;
+                font-size: 18px;
+                text-transform: uppercase;
+                padding: 0px 32px;
+
+                &:hover {
+                    color: #eadc3e;
+                    padding-left: 10px;
+                }
+            }
+
+            p {
+                float: left;
+                color: #ffffff;
+                text-transform: uppercase;
+            }
+        }
     }
 }
-

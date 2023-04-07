@@ -24,8 +24,8 @@
   <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary p-2" id="menu">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <span class="text-primary fs-5 fw-bold">Neoshoes</span>
+        <a class="navbar-brand" href="./index.htmlx">
+          <span class="text-warning fs-2 fw-bold">Neoshoes</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,9 +39,9 @@
             </li>
 
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              <a class="nav-link dropdown-toggle" href="./index.html" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
-                <span class="text-primary">Zapatillas</span>
+                Zapatillas
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="./paginas/hombres.html">Hombres</a></li>
@@ -55,14 +55,10 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./paginas/sobre_nosotros.html">
-                <span class="text-primary">Sobre Nosotros</span>
+                Sobre Nosotros
               </a>
-            </li>
+              </il>
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-            <button class="btn btn-primary-outline-success btn-primary fs" type="submit">Buscar</button>
-          </form>
         </div>
       </div>
     </nav>
@@ -73,24 +69,24 @@
   <!--Cuerpo-->
   <main style="max-width: 1440px; margin: 0 auto;">
     <!--TEXTO 1 E IMAGEN 1-->
-    <div class="primerLinea" data-aos="fade-up">
+    <section class="primerLinea" data-aos="fade-up">
       <div class="texto1 container-fluid">
         <h1>CAMPEONES DEL MUNDO</h1>
         <p class="p-3 fs-4">¡ Somos campeones y en <span class="text-warning fs-3 fw-bold">Neoshoes</span>
           queremos compartir nuestras ofertasas con vos !</p>
       </div>
       <img src="./imagenes/copa_del_mundo.jpg" alt="copa de mundial">
-    </div>
+    </section>
 
-      <!--TEXTO 2 E IMAGEN 2-->
-      <div class="segundaLinea container-fluid" data-aos="fade-right">
-        <img src="./imagenes/futbol_femenino.jpg" alt="botines de mujer">
-        <div class="texto2">
-          <h1>BUSCA TU PROPIO ESTILO</h1>
-          <p class="p-3 fs-4">En <span class="text-warning fs-3 fw-bold">Neoshoes</span>
-            sabemos que todos compartimos la pasión por el deporte asique tenemos calzados para todos.</p>
-        </div>
+    <!--TEXTO 2 E IMAGEN 2-->
+    <section class="segundaLinea container-fluid" data-aos="fade-right">
+      <img src="./imagenes/futbol_femenino.jpg" alt="botines de mujer">
+      <div class="texto2">
+        <h2>BUSCA TU PROPIO ESTILO</h2>
+        <p class="p-3 fs-4">En <span class="text-warning fs-3 fw-bold">Neoshoes</span>
+          sabemos que todos compartimos la pasión por el deporte asique tenemos calzados para todos.</p>
       </div>
+    </section>
 
     <!--CARRUSEL-->
     <div id="carouselExampleCaptions" class="carousel slide container-fluid" data-aos="flip-down">
@@ -121,14 +117,14 @@
         </div>
 
         <div class="carousel-item">
-          <img src="./imagenes/carrusel_3.jpg" class="d-block w-100" alt="botines blancos con punteado naranja">
+          <img src="./imagenes/carrusel_3.png" class="d-block w-100" alt="botines blancos con punteado naranja">
           <div class="carousel-caption d-none d-md-block">
             <h5>Ofertas</h5>
           </div>
         </div>
 
         <div class="carousel-item">
-          <img src="./imagenes/carrusel_5.jpg" class="d-block w-100" alt="persona atandose cordones">
+          <img src="./imagenes/carrusel_4.png" class="d-block w-100" alt="persona atandose cordones">
           <div class="carousel-caption d-none d-md-block">
             <h5>Ofertas</h5>
           </div>
@@ -146,49 +142,76 @@
       </button>
     </div>
 
-  </main>
 
-  <!--Sobre Nosotros-->
-  <section class="nuestra_info">
-    <div class="w-50 m-auto text-start" id="nosotros">
-      <h3 class="text-warning">¿Cual es nuestra misión?</h3>
+    <!--Sobre Nosotros-->
+    <section class="nuestra_info flex-column">
+      <div class="m-auto text-start" id="nosotros">
+        <h3 class="text-warning">¿Cual es nuestra misión?</h3>
         <p class="p3 fs-4">Los deportistas no se conforman con lo promedio, y nosotros tampoco.
-           En Neoshoes tenemos una misión, ser la mejor marca de zapatillas y botines del mundo.
-            Cada día arduamente buscamos cumplir con todos nuestros objetivos y las expectativas de nuestros clientes que buscan un calzado ideal.
+          En Neoshoes tenemos una misión, ser la mejor marca de zapatillas y botines del mundo.
+          Cada día arduamente buscamos cumplir con todos nuestros objetivos y las expectativas de nuestros clientes que
+          buscan un calzado ideal.
         </p>
-    </div>
-    <div class="mt-5 text-end" id="lupa">
-      <img src="./imagenes/lupa.png" alt="hombre con lupa">
-    </div>
-  </section>
+      </div>
+      <div class="mt-5 text-end" id="lupa">
+        <img src="./imagenes/lupa.png" alt="hombre con lupa">
+      </div>
+    </section>
+
+  </main>
 
 
   <!--FOOTER-->
 
-  <footer class="w-100 d-flex align-items container-fluid bg-info d-flex justify-content-center flex-wrap">
-    <p class="fs-4 pt-3 px-3">Neoshoes &copy; Se asegura todos los derechos 2023</p>
-    <div id="iconosRedes">
-      <a href="https://www.whatsapp.com/"><i class="bi bi-whatsapp"></i></a>
-      <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
-      <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
-      <a href="https://www.twitter.com/"><i class="bi bi-twitter"></i></a>
-      <a class="fs-4 pt-3 px-2" href="#top">Ir al principio</a>
+  <footer class="footer">
+    <div class="container__footer">
+      <div class="row">
+        <div class="footer-col">
+          <h4>Neoshoes</h4>
+          <ul>
+            <li><a href="./paginas/sobre_nosotros.html">Sobre Nosotros</a></li>
+            <li><a href="#">Nuestros Servicios</a></li>
+            <li><a href="#">Politica de Privacidad</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Tienda Online</h4>
+          <ul>
+            <li><a href="./paginas/hombres.html">Hombres</a></li>
+            <li><a href="./paginas/mujeres.html">Mujeres</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Nuestras redes</h4>
+          <div id="iconosRedes">
+            <a href="https://www.whatsapp.com/"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.twitter.com/"><i class="bi bi-twitter"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Derechos</h4>
+          <ul>
+            <li>
+              <p>Neoshoes &copy; Se asegura todos los derechos 2023</p>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <p class="light mb-0 px-2 pt-3 fs-4">Contáctanos: 0800-numerofalso</p>
   </footer>
-
-
-
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init(  {
-            duration: 800,
-        });
-    </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+    });
+  </script>
 </body>
 
 </html>
